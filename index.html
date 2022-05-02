@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="">
+<meta name="robots" content="">
+<link rel="short icon" href="">
+<link rel="stylesheet" href="libs/swiper.min.css">
+<link rel="stylesheet" href="libs/select2.min.css">
+<link rel="stylesheet" href="css/style.min.css">
+  <title>Аренда</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- ?Подключение Header -->
+    
+
+<div class="popup js-popup-message choice-location">
+    <div class="popup__wrapper">
+        <div class="popup__inner">
+          <div class="popup__content">
+            <button class="popup__btn-close"></button>
+            <div class="popup__head mb-30">
+                <h4 class="popup__title">ОБРАТНАЯ СВЯЗЬ</h4>
+                <p>Вы можете задать свой вопрос в форме ниже. Наши специалисты вскоре с вами свяжутся и проконсультируют по всем вопросам</p>
+            </div>
+            <form class="popup__form form mb-20" action="#">  
+                <div class="form__wrapper mb-30">
+                    <div class="form__row">
+                        <div class="form__item">
+                            <div class="form__input">
+                                <input class="form__control form-control" placeholder="Имя" type="text">
+                            </div>
+                        </div>
+                        <div class="form__item">
+                            <div class="form__input">
+                                <select id="choice-popup-contry">
+                                <option data-countryflag="russia">Россия</option>
+                                <option data-countryflag="uzbekistan">Узбекистан</option>
+                            </select>
+                            <input class="form__control form-control" placeholder="+7 (999) 999-99-99" type="tel">
+                        </div>
+                        </div>
+                        <div class="form__item">
+                                <div class="form__input">
+                                    <input class="form__control form-control" placeholder="Ваш вопрос" type="text">
+                                </div>
+                        </div>
+                    
+                    </div>
+                </div>  
+                <button class="form__btn btn btn-any">Отправить заявку</button>
+            </form>
+            <div class="popup__any-text">
+                Нажимая кнопку “Отправить заявку” вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+    <!-- ?Основной контент -->
+    <main class="main main--ind">
+      <!-- Линии по побокам(Оболочка) -->
+      <div class="content-wrapper">
+        <!--? breadcrumb -->
+        <div class="breadcrumb mb-30">
+          <div class="container">
+            <nav aria-label="breadcrumb" class="breadcrumb__nav">
+              <ul class="breadcrumb__list">
+                <li class="breadcrumb__item"><a href="index.html">Главная</a></li>
+                <li class="breadcrumb__item active">Аренда</li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <!--? Rent -->
+        <section class="rent mb-120">
+          <div class="container">
+            <div class="head mb-30">
+              <h1 class="head__title title title-primary">Аренда</h1>
+            </div>
+            <div class="rent__wrapper">
+              <div class="rent__floors floors-rent mb-60">
+                <div class="floors-rent__row">
+                  <div class="floors-rent__text">этаж</div>
+                  <div class="floors-rent__items">
+                    <div class="floors-pagination swiper-pagination"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="rent__slider floors-slider">
+                <div class="floors-slider__wrapper">
+                  <div class="swiper-container floors-slider__container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="floors-slider__item">
+                            <img class="map" src="img/floors-image/floor.png" width="537px" height="480px" alt="" usemap="#floor-1">
+                            <map name="floor-1">
+                              <area data-zone="zone-map" href="/" shape="poly" title="01A" alt="01A"
+                                coords="157,99,475,101,524,246,365,247,365,171,156,171">
+                              <area data-zone="zone-cafe" href="/" shape="poly" title="01B" alt="01B"
+                                coords="362,467,362,394,288,394,288,417,246,418,247,469">
+                            </map>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="floors-slider__item">
+                          <img class="map" src="img/floors-image/floor-2.png" width="537" height="480"
+                            alt="" usemap="#floor-2">
+                          <map name="floor-2">
+                            <area data-zone="zone-4" href="/" shape="poly" title="02A" alt="02A"
+                              coords="72,11,270,11,270,96,271,101,182,101,182,191,71,191">
+                            <area data-zone="zone-2" href="/" shape="poly" title="02B" alt="02B"
+                              coords="272,10,467,11,525,188,445,187,447,290,350,290,352,100,273,100">
+                            <area data-zone="zone-cafe2" href="/" shape="poly" title="02C" alt="02C"
+                              coords="15,292,101,292,101,379,42,379">
+                            <area data-zone="zone-7" href="/" shape="poly" title="02D" alt="02D"
+                              coords="357,293,465,293,525,469,183,468,183,379,356,379">
+                          </map>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="floors-slider__item">
+                          <img src="img/floors-image/floor.png" width="540" height="480" alt="">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="floors-slider__item">
+                          <img src="img/floors-image/floor.png" width="540" height="480" alt="">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="floors-slider__item">
+                          <img src="img/floors-image/floor.png" width="540" height="480" alt="">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="floors-slider__item">
+                          <img src="img/floors-image/floor.png" width="540" height="480" alt="">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="floors-slider__item">
+                          <img src="img/floors-image/floor.png" width="540" height="480" alt="">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="floors-slider__item">
+                          <img src="img/floors-image/floor.png" width="540" height="480" alt="">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="floors-slider__item">
+                          <img src="img/floors-image/floor.png" width="540" height="480" alt="">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="floors-slider__item">
+                          <img src="img/floors-image/floor.png" width="540" height="480" alt="">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="floors-slider__item">
+                          <img src="img/floors-image/floor.png" width="540" height="480" alt="">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="floors-slider__item">
+                          <img src="img/floors-image/floor.png" width="540" height="480" alt="">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="floors-slider__item">
+                          <img src="img/floors-image/floor.png" width="540" height="480" alt="">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="floors-slider__item">
+                          <img src="img/floors-image/floor.png" width="540" height="480" alt="">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="floors-slider__item">
+                          <img src="img/floors-image/floor.png" width="540" height="480" alt="">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="floors-slider__item">
+                          <img src="img/floors-image/floor.png" width="540" height="480" alt="">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="floors-slider__item">
+                          <img src="img/floors-image/floor.png" width="540" height="480" alt="">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="floors-slider__item">
+                          <img src="img/floors-image/floor.png" width="540" height="480" alt="">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="floors-slider__item">
+                          <img src="img/floors-image/floor.png" width="540" height="480" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Area с контентанми -->
+                  <div class="area">
+                    <!-- Floors-1 -->
+                    <div class="area-floors area-floors-1">
+                      <div class="area-block zone-map" data-id="zone-map" style="display: none;">
+                        <div class="baloon"><b>01A</b><br>453 м<sup>2</sup><br><b>сдано</b>
+                        </div>
+                      </div>
+                      <div class="area-block zone-cafe1" data-id="zone-cafe" style="display: none;">
+                        <div class="baloon"><b>01B</b><br>105.8 м<sup>2</sup><br><b>сдано</b>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Floors-2 -->
+                    <div class="area-floors area-floors-2">
+                      <div class="area-block zone-4" data-id="zone-4" style="display: none;">
+                        <div class="baloon"><b>02A</b><br>301.45 м<sup>2</sup><br><b>сдано</b></div>
+                      </div>
+                      <div class="area-block zone-2" data-id="zone-2" style="display: none;">
+                        <div class="baloon"><b>02B</b><br>430.12 м<sup>2</sup><br><b>сдано</b></div>
+                      </div>
+                      <div class="area-block zone-cafe2" data-id="zone-cafe2" style="display: none;">
+                        <div class="baloon"><b>02C</b><br>56.9 м<sup>2</sup><br><b>сдано</b></div>
+                      </div>
+                      <div class="area-block zone-7" data-id="zone-7" style="display: none;">
+                        <div class="baloon"><b>02D</b><br>430.98 м<sup>2</sup><br><b>сдано</b></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="floors-arrows">
+                  <div class="swiper-button-prev arrow-slider-prev">
+                    <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.51912 0.76593L1.46809 7.99997L9.51912 15.234" stroke="#98D75B" />
+                    </svg>
+                  </div>
+                  <div class="swiper-button-next arrow-slider-next">
+                    <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.480835 0.76593L8.53186 7.99997L0.480835 15.234" stroke="#98D75B" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <!--? Prom -->
+        <section class="prom pb-120">
+          <div class="container">
+            <div class="head mb-30">
+              <h2 class="head__title title title-primary">реклама</h2>
+              <p>Варианты размещения рекламы</p>
+            </div>
+            <div class="grid grid-primary">
+              <div class="grid__item">
+                <div class="any-card bg-image" style="background-image: url(img/prom/prom-image-1.jpg);">
+                  <div class="any-card__content">
+                    <div class="any-card__number">/01</div>
+                    <div class="any-card__text">Реклама на парковках</div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid__item">
+                <div class="any-card bg-image" style="background-image: url(img/prom/prom-image-2.jpg);">
+                  <div class="any-card__content">
+                    <div class="any-card__number">/02</div>
+                    <div class="any-card__text">Реклама в лифтах</div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid__item">
+                <div class="any-card bg-image" style="background-image: url(img/prom/prom-image-3.jpg);">
+                  <div class="any-card__content">
+                    <div class="any-card__number">/03</div>
+                    <div class="any-card__text">Интеграция в навигацию</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+      <!--? Text block  -->
+      <section class="text-block text-block--gradient bg-image"
+        style="background-image: url(img/text-block/bg-text-block.png);">
+        <div class="text-block__container container">
+          <div class="text-block__content">
+            Бизнес центр <span class="text-block__any">«Алгоритм»</span> — идеальное место <span
+              class="text-block__any">для размещения рекламы</span> товаров и услуг премиум класса
+          </div>
+          <div class="text-block__social">
+            <div class="social">
+              <a href="#" class="social__item"><span class="i-telegram"></span></a>
+              <a href="#" class="social__item"><span class="i-vk"></span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="content-wrapper">
+        <!--? Claim -->
+        <section class="claim mb-60">
+          <div class="container">
+            <div class="claim__content bg-image" style="background-image: url(img/claim/claim-bg.png);">
+              <div class="claim__image">
+                <img src="img/claim/claim-rocket.svg" width="90" height="90" alt="">
+              </div>
+              <div class="claim__head head mb-40">
+                <h3 class="claim__title title title-any">оставить заявку на рекламу</h3>
+                <p>Оставьте свои контактные данные в форме заявки ниже. Наши специалисты подберут для вас подходящий
+                  формат рекламы и сориентируют по стоимости.</p>
+              </div>
+              <form class="claim__form form" action="#">
+                <div class="form__wrapper mb-20">
+                  <div class="form__row">
+                    <div class="form__item">
+                      <div class="form__input">
+                        <input class="form__control form-control" placeholder="Имя" type="text">
+                      </div>
+                    </div>
+                    <div class="form__item">
+                      <div class="form__input">
+                        <select id="choice-country">
+                          <option data-countryflag="russia">Россия</option>
+                          <option data-countryflag="uzbekistan">Узбекистан</option>
+                        </select>
+                        <input class="form__control form-control" placeholder="+7 (999) 999-99-99" type="tel">
+                      </div>
+                    </div>
+                    <div class="form__item">
+                      <button class="form__btn btn btn-primary">Отправить заявку</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="form__politic">Нажимая кнопку “Отправить заявку” вы соглашаетесь с <a href="#">политикой
+                    конфиденциальности</a></div>
+              </form>
+            </div>
+          </div>
+        </section>
+        <!--? Contacts -->
+        <section class="info">
+          <div class="info__top">
+            <div class="container">
+              <div class="info__top-row">
+                <div class="info__logo logo">
+                  <a href="index.html" class="logo__wrap">
+                    <img src="img/logo.png" width="170" height="77" alt="">
+                  </a>
+                </div>
+                <nav class="info__nav nav-info">
+                  <div class="nav-info__row">
+                    <div class="nav-info__item">
+                      <a href="#">О центре</a>
+                      <a href="#">Аренда и реклама</a>
+                    </div>
+                    <div class="nav-info__item">
+                      <a href="#">Часы работы</a>
+                      <a href="#">Контакты</a>
+                    </div>
+                    <div class="nav-info__item">
+                      <a href="#">Как добраться?</a>
+                      <a href="#">Паркинг</a>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+            </div>
+
+          </div>
+          <div class="info__bottom-row">
+            <div class="info__item">
+              <div class="info__item-block">
+                <span class="info__item-icon i-location"></span>
+                <p>Ул. Академика Пилюгина, д. 22</p>
+              </div>
+            </div>
+            <div class="info__item">
+              <div class="info__item-block">
+                <span class="info__item-icon i-convert"></span>
+                <a href="mailto:info@algorithm-centre.ru">info@algorithm-centre.ru</a>
+              </div>
+            </div>
+            <div class="info__item">
+              <a href="tel:+7(495)9090080" class="info__item-tel">+7 (495) 909 00 80</a>
+            </div>
+            <div class="info__item info__item--none">
+              <div class="social">
+                <a href="#" class="social__item"><span class="i-telegram"></span></a>
+                <a href="#" class="social__item"><span class="i-vk"></span></a>
+                <a href="#" class="social__item"><span class="i-twitter"></span></a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- ?Подключение Footer -->
+    <footer class="footer">
+    <div class="container">
+        
+    </div>
+</footer>
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=b6a870ec-d914-424a-a003-b2d702a5d3db&amp;lang=ru_RU" type="text/javascript"></script>
+<script src="libs/jquery.maphilight.js"></script>
+<script src="libs/select2.min.js"></script>
+<script src="libs/swiper.min.js"></script>
+<script src="js/main.js"></script>
+ <script >
+    var myMap;
+    ymaps.ready(init);
+    function init() {
+        myMap = new ymaps.Map('map', {
+            center: [41.28496400103806, 69.25303541677091], 
+            zoom: 17, 
+          }, 
+          {
+            searchControlProvider: 'yandex#search'
+          });
+         
+           myCollectionPin = new ymaps.GeoObjectCollection({}, {
+              iconLayout: 'default#image',
+              iconImageHref: 'img/metka.png',
+              iconImageSize: [40, 55],
+          });
+           var mainLocation = [
+             {
+              coords: [41.28496400103806, 69.25303541677091],
+              hintContent: 'Алгоритм',
+              ballonContentText: 'Алгоритм'
+             },
+          ]
+          mainLocation.forEach(el => {
+            var mark = new ymaps.Placemark(el.coords, {
+              hintContent: el.hintContent,
+              balloonContent: `<span class="text">${el.ballonContentText}</span>`,
+            });
+            myCollectionPin.add(mark)
+          });
+          myMap.geoObjects.add(myCollectionPin);  
+      }
+</script> 
+</body>
+
+</html>
